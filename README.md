@@ -19,10 +19,9 @@ Before starting, you need to have **Docker** installed on your PC. Docker is a p
 
 1. **Clone the Repository**: Open your terminal and run the following commands to download this project to your PC and navigate into it:
    ```bash
-   git clone <YOUR_REPOSITORY_URL>
-   cd <YOUR_REPOSITORY_NAME>
+   git clone https://github.com/AayushShah-904/big-data-framework
+   cd big-data-framework
    ```
-   *(Make sure to replace `<YOUR_REPOSITORY_URL>` with your actual repository link).*
 
 2. **Create the Notebooks Directory**: Before starting the cluster, manually create a folder named `notebooks`. This ensures your Jupyter notebooks are safely saved to your local PC so your work is persistent!
    ```bash
