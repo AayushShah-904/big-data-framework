@@ -1,0 +1,14 @@
+# Use the Jupyter PySpark image as the base
+FROM jupyter/pyspark-notebook:spark-3.1.1
+
+# Install libraries via pip
+# We use --no-cache-dir to keep the image size lean
+RUN pip install --no-cache-dir \
+    numpy \
+    pandas \
+    matplotlib \
+    seaborn \
+    networkx
+
+# Verify the installations
+RUN python3 -c "import numpy; import pandas; import matplotlib; import seaborn; import networkx; print('All libraries installed successfully!')"
